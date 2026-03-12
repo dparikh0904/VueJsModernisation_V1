@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans antialiased;
+  }
+}
+
+@layer components {
+  .section {
+    @apply py-16;
+  }
+
+  .section-lg {
+    @apply py-24;
+  }
+
+  .section-shaped {
+    @apply relative overflow-hidden;
+  }
+
+  .shape {
+    @apply absolute top-0 left-0 right-0 w-full h-full overflow-hidden;
+  }
+
+  .shape-default {
+    @apply bg-gradient-to-br from-primary-500 to-purple-600;
+  }
+
+  .shape span {
+    @apply absolute w-full h-full block;
+  }
+
+  .btn-icon {
+    @apply inline-flex items-center gap-2;
+  }
+
+  .form-errors {
+    @apply text-danger text-sm mt-1;
+  }
+
+  .input-error {
+    @apply border-danger;
+  }
+}
